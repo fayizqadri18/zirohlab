@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        backdrop-filter: blur(1.5rem);
+        background: #ffffff0d;
+        color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        filter: drop-shadow(0 0 0.75rem #212121);
+        
+        h3 {
+            text-align: center;
+            font-weight: 600;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input {
+            margin: 10px 0;
+            height: 40px;
+            width: 289px;
+            border: none;
+            border-radius: 2px;
+            padding: 0px 6px;
+            background: #eee;
+            &:focus-within {
+                background: #ffffff;
+                border: 1px solid blue;
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        .validationInput {
+            font-size: 15px;
+            color: #df0707;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 2px;
+            color: #ffffff;
+            background-color: #044583eb;
+        }
+    }
+}
+
+cdk-virtual-scroll-viewport {
+    height: 100vh;
+}
+
+.dashboard-container {
+    background: #212121;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    .logout-btn {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .logout {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 2px;
+        color: #ffffff;
+        background-color: #044583eb;
+    }
+    h2{
+        text-align: center;
+         padding: 25px;
+    }
+}
+
+table {
+    margin: 0px 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    position: relative;
+    thead {
+        vertical-align: middle;
+        border-color: inherit;
+      }
+    th{
+        padding-right: 42px;
+        display: table-cell;
+        vertical-align: inherit;
+        font-weight: bold;
+        text-align: -internal-center;
+       
+    }
+    button{
+        border: none;
+        padding: 10px 20px;
+        border-radius: 2px;
+        color: #ffffff;
+        background-color: rgb(243, 78, 2)
+    }
+}
